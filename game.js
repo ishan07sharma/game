@@ -13,6 +13,11 @@ $(document).on("keydown",function(){
 })
 $(".start").on("click",function(){
     newSequence();
+    $(".start").animate(
+        {
+            opacity: '0.5'
+        }
+    )
 })
 function playsound(sound){
     var audio=new Audio("sounds/"+sound+".mp3");
