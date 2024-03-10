@@ -11,6 +11,9 @@ $(document).on("keydown",function(){
     }
 
 })
+$(".start").on("click",function(){
+    newSequence();
+})
 function playsound(sound){
     var audio=new Audio("sounds/"+sound+".mp3");
     audio.play();
